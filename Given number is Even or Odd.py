@@ -1,7 +1,8 @@
-n=float(input())
+n=int(input())
 if(n>0):
-    print("positive")
-elif(n==0):
-    print("Zero")
+    if(n%2==0):
+        print("Even")
+    else:
+        print("Odd")
 else:
-    print("negative")
+    print("invalid")
