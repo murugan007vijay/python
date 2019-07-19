@@ -1,12 +1,13 @@
-N = int(input(" "))
-count = 0
+n = int(input())
 
-for i in range(2, (N//2 + 1)):
-    if(N % i == 0):
-        count = count + 1
-        break
-
-if (count == 0 and N != 1):
-    print("yes")
+if n > 1:
+   for i in range(2,n):
+       if (n % i) == 0:
+           print("no")
+    
+           break
+   else:
+       print("yes")
+      
 else:
-    print("no")
+   print("no")
