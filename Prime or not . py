@@ -1,7 +1,12 @@
-prim=int(input())
-for i in range(2,prim):
-    if(prim%i==0):
-     print("no")
-    break
-else:
+Num = int(input(" "))
+count = 0
+
+for i in range(2, (Num//2 + 1)):
+    if(Num % i == 0):
+        count = count + 1
+        break
+
+if (count == 0 and Num != 1):
     print("yes")
+else:
+    print("no")
